@@ -1,0 +1,98 @@
+.border {
+    border-bottom: solid 1px #ececec;
+}
+
+.logo {
+    @include font(26px, 700, 1.19);
+
+    display: block;
+    font-family: Raleway, sans-serif;
+    text-decoration-line: none;
+    padding-top: 19px;
+    padding-bottom: 25px;
+}
+
+.web {
+    color: var(--accent-color);
+}
+
+.studio {
+    color: var(--secondary-text-color);
+}
+
+
+/*site-navigation*/
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.site-nav .item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.site-nav {
+    margin-left: 93px;
+}
+
+.site-nav .link {
+    display: flex;
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--title-text-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.nav-contacts .link:hover,
+.nav-contacts .link:focus {
+    color: var(--accent-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link.current::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+}
+
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+.nav-contacts {
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-contacts .item+.item {
+    margin-left: 50px;
+}
+
+.nav-contacts .link {
+    display: flex;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    align-items: center;
+    color: var(--primary-text-color);
+}
+
+.nav-contacts .link svg {
+    fill: var(--primary-text-color);
+    margin-right: 10px;
+}
+
+.nav-contacts .link:hover svg {
+    fill: var(--accent-color);
+}

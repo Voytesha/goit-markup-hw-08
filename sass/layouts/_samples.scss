@@ -1,0 +1,45 @@
+.samples {
+    padding-top: 0px;
+}
+
+.samples__title,
+.team__title,
+.clients__title {
+    @include font(36px, 700, 1.67);
+
+    margin-bottom: 50px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+
+.samples__image {
+    display: flex;
+    gap: 30px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.samples__block {
+    display: block;
+    position: relative;
+}
+
+.samples__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 70px;
+    font-weight: 700;
+    color: var(--primary-background-color);
+    background: rgba(47, 48, 58, 0.8);
+    text-transform: uppercase;
+}

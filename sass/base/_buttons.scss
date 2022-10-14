@@ -1,0 +1,16 @@
+.button {
+    @include font(16px, 700, 1.88);
+    
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: var(--accent-color);
+    font-family: inherit;
+    width: 216px;
+    letter-spacing: 0.06em;
+    color: var(--primary-background-color);
+    border: var(--accent-color);
+    border-radius: 4px;
+    cursor: pointer;
+}

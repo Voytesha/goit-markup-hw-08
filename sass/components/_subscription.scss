@@ -1,0 +1,49 @@
+
+.subscribe {
+    margin-left: auto;
+}
+
+.footer__subscription {
+    display: flex;
+}
+
+.footer__subscription input {
+    margin-right: 12px;
+    padding-left: 16px;
+    width: 358px;
+    height: 50px;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    text-align: left;
+    background: var(--secondary-bcg-studio);
+    color: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    outline: none;
+}
+.subscribe__btn {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: var(--accent-color);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    width: 216px;
+    letter-spacing: 0.06em;
+    color: var(--primary-background-color);
+    border: var(--accent-color);
+    border-radius: 4px;
+    cursor: pointer;
+    fill: var(--primary-background-color);
+}
+
+.subscribe__btn svg {
+    margin-left: 10px;
+}
