@@ -1,36 +1,77 @@
 .hero-section {
-    max-width: 1600px;
-    height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    background-position: center;
-    background-image: linear-gradient(to right,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(../img/hero-background.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-color: var(--secondary-bcg-studio);
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-position: center;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/hero-background-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--secondary-bcg-studio);
+  @include retina {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../img/hero-background-mob-2.jpg);
+  }
+
+  @include tablet {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../img/hero-background-tab.jpg);
+
+    @include retina {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../img/hero-background-tab-2.jpg);
+    }
+  }
+  @include desktop {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../img/hero-background.jpg);
+    @include retina {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../img/hero-background-2.jpg);
+    }
+  }
 }
 
-
 .hero-title {
-@include font(26px, 900, 1.62);
-width: 360px;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--primary-background-color);
-    margin: 0 auto;
-    margin-bottom: 30px;
+  @include font(26px, 900, 1.62);
+  width: 360px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-background-color);
+  margin: 0 auto;
+  margin-bottom: 30px;
 
-    @media screen and (min-width:1200px) {
-        @include font(44px, 900, 1.36);    
-        width: 696px; 
-        }
-    
-    
+  @include desktop {
+    @include font(44px, 900, 1.36);
+    width: 696px;
+  }
 }
