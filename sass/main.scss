@@ -4,6 +4,7 @@
 @import "./base/common";
 @import "./base/mixins";
 @import "./base/buttons";
+@import "./base/container";
 
 //Layouts
 @import "./layouts/header";
@@ -13,6 +14,7 @@
 @import "./layouts/team";
 @import "./layouts/clients";
 @import "./layouts/footer";
+
 
 //Components
 @import "./components/modal";

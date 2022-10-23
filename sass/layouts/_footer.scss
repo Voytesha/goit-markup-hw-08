@@ -11,14 +11,26 @@
 }
 
 .footer__container {
+    display: block;
+    align-items: center;
+
+    @media screen and (min-width:768px) {
     display: flex;
-    align-items: baseline;
+    align-items: baseline;  
+    }
+    
 }
 
 .footer {
     background-color: #2f303a;
     padding-top: 60px;
     padding-bottom: 60px;
+    &__contacts {
+        @media screen and (max-width:767px) {
+        text-align: center;
+        margin-bottom: 60px;
+        }
+    }
 }
 
 .footer__contact {
@@ -52,14 +64,20 @@
 }
 
 .connect {
+    align-items: center;
     margin-left: 70px;
 }
 
 .connect__container {
-    display: flex;
+    display: block;
+    align-items: center;
+    @media screen and (min-width:768px) {
+        display: flex;
     width: 205px;
     height: 45px;
-    margin-top: 20px;
+    margin-top: 20px; 
+    }
+   
 }
 
 .connect__items {

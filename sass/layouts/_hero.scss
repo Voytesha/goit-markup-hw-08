@@ -16,14 +16,21 @@
     background-color: var(--secondary-bcg-studio);
 }
 
+
 .hero-title {
-    @include font(44px, 900, 1.36);
-    
-    width: 696px;
+@include font(26px, 900, 1.62);
+width: 360px;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--primary-background-color);
     margin: 0 auto;
     margin-bottom: 30px;
+
+    @media screen and (min-width:1200px) {
+        @include font(44px, 900, 1.36);    
+        width: 696px; 
+        }
+    
+    
 }

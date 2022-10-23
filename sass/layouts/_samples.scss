@@ -1,16 +1,29 @@
 .samples {
-    padding-top: 0px;
+    display: none;
+
+    @media screen and (min-width:1200px) {
+    display: block;
+    padding-top: 0px;    
+    }
+    
 }
 
 .samples__title,
 .team__title,
 .clients__title {
-    @include font(36px, 700, 1.67);
-
-    margin-bottom: 50px;
+    @include font(28px, 700, 1.71);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
+    margin-bottom: 30px;
+
+    @media screen and (min-width:1200px) {
+    @include font(36px, 700, 1.72); 
+    margin-bottom: 50px;  
+    }
+   
+    
+    
 }
 
 .samples__image {
