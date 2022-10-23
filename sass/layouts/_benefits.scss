@@ -1,59 +1,49 @@
 .benefits {
+  @media screen and (max-width:767px) {
   display: block;
-  @media screen and (min width:768px) {
-    display: flex;
-    
   }
+  @media screen and (min-width:768px) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 354px;}
 
-  &__item {
-    @media screen and (min-width: 480px) {
-        width: 450px;
-      }
-    
-      @media screen and (min-width: 768px) {
-        width: 354px;
-      }
-    
-      @media screen and (min-width: 1200px) {
-        width: 270px;
-      }
-  }
+  @media screen and (min-width:1200px) {
+  width: 270px;
+}
 
   &__icon {
     display: flex;
-    height: 120px;
     margin-bottom: 30px;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    width: 450px;
+    height: 120px;
     background-color: var(--second-bcg-color);
-      @media screen and (min-width: 480px) {
-          width: 450px;
-        }
-      
-        @media screen and (min-width: 768px) {
-          width: 354px;
-        }
-      
-        @media screen and (min-width: 1200px) {
-          width: 270px;
-        }
-  }
+
+    @media screen and (min-width:768px) {
+    width: 354px;
+    }
+    
+    @media screen and (min-width:1200px) {
+    width: 270px;
+  }}
+
   &__title {
     @include font(14px, 700, 1.14);
 
     margin-bottom: 10px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    text-align: center;
     color: var(--title-text-color);
-    @media screen and (min-width: 768px) {
-        text-align: left;
-      }
   }
+
   &__text {
+    margin-bottom: 30px;
     font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
-  }
-}
+  }}
+  
