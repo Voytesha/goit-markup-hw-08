@@ -425,11 +425,11 @@ img {
 
 .hero-section {
   max-width: 1600px;
-  height: 600px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-position: center;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/hero-background-mob.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-background-mob.jpg);
@@ -458,6 +458,9 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .hero-section {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    height: 600px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/hero-background.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-background.jpg);
   }
@@ -671,7 +674,6 @@ img {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  width: 450px;
 }
 @media screen and (min-width: 768px) {
   .team__item {
@@ -680,7 +682,6 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    gap: 30px;
     width: 354px;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -800,8 +801,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 30px;
-  width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 3px;
@@ -922,6 +921,8 @@ img {
   width: 205px;
   height: 45px;
   margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .connect__items {
@@ -932,7 +933,6 @@ img {
       -ms-flex-align: center;
           align-items: center;
   gap: 10px;
-  margin-left: 122px;
 }
 
 .connect__title {
@@ -1001,7 +1001,7 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 528px;
+  min-width: 450px;
   min-height: 581px;
   padding: 40px;
   background-color: var(--primary-background-color);
@@ -1012,6 +1012,12 @@ img {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+    min-height: 581px;
+  }
 }
 
 .modal-title {
@@ -1199,6 +1205,7 @@ textarea {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-size: 12px;
 }
 
 .accept input:checked + label .checkbox {
@@ -1219,7 +1226,7 @@ textarea {
 .footer__subscription input {
   margin-right: 12px;
   padding-left: 16px;
-  width: 358px;
+  width: 100%;
   height: 50px;
   font-family: Roboto;
   font-size: 16px;

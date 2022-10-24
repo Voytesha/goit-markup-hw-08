@@ -74,17 +74,19 @@
 
 .connect__container {
     display: flex;
-align-items: center;
+    align-items: center;
     width: 205px;
     height: 45px;
-    margin-top: 20px;
+    margin-top: 20px;   
+    margin-left: auto;
+    margin-right: auto;;
 }
 
 .connect__items {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-left: 122px;
+
 }
 
 .connect__title {
