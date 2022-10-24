@@ -1,33 +1,29 @@
 .benefits {
-  @media screen and (max-width:767px) {
-  display: block;
-  }
-  @media screen and (min-width:768px) {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  width: 354px;}
-
-  @media screen and (min-width:1200px) {
-  width: 270px;
+width: 100%;
+@include tablet {
+display: flex;
+flex-wrap: wrap;
+gap: 30px;
 }
+
+&__item {
+
+      @include tablet {
+      flex-basis: calc((100% - 30px)/2);
+      }
+    
+      @include desktop {
+      flex-basis: calc((100% - 90px)/4);}}
 
   &__icon {
     display: flex;
     margin-bottom: 30px;
     align-items: center;
     justify-content: center;
-    width: 450px;
     height: 120px;
     background-color: var(--second-bcg-color);
 
-    @media screen and (min-width:768px) {
-    width: 354px;
-    }
-    
-    @media screen and (min-width:1200px) {
-    width: 270px;
-  }}
+  }
 
   &__title {
     @include font(14px, 700, 1.14);
