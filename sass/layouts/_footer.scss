@@ -2,16 +2,27 @@
     background-color: #2f303a;
     padding-top: 60px;
     padding-bottom: 60px;
+    @include desktop {
+        padding-bottom: 0;
+    }
 }
+
+.footer__tablet {
+    @media screen and (min-width:768px) {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-around;
+        }
+}
+
 .footer__container {
     display: block;
-    text-align:  center;
-    
-    @media screen and (min-width:768px) {
-    display: flex;
-    align-items: baseline;    
+    text-align: center;
+
+    @media screen and (min-width:1200px) {
+        display: flex;
+        align-items: baseline;
     }
-    
 }
 
 .footer__logo {
@@ -66,10 +77,14 @@
 }
 
 .connect {
-    display: block;
-    text-align: center;
 
-   /* margin-left: 70px;*/
+display: block;
+text-align: center;
+
+@include desktop {
+margin-left: 70px;
+}
+
 }
 
 .connect__container {
@@ -95,6 +110,10 @@
     font-weight: 700;
     color: var(--primary-background-color);
     text-transform: uppercase;
+    @include desktop {
+    text-align: left;
+    margin-bottom: 0px;
+    }
 }
 
 .connect__icon {
