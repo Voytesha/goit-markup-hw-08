@@ -3,7 +3,7 @@
     padding-top: 60px;
     padding-bottom: 60px;
     @include desktop {
-        padding-bottom: 0;
+        padding-top: 0;
     }
 }
 
@@ -12,6 +12,7 @@
             display: flex;
             align-items: baseline;
             justify-content: space-around;
+
         }
 }
 
@@ -22,6 +23,7 @@
     @media screen and (min-width:1200px) {
         display: flex;
         align-items: baseline;
+        text-align: left;
     }
 }
 
@@ -35,8 +37,7 @@
     margin-bottom: 20px;
     font-family: Raleway, sans-serif;
     text-decoration-line: none;
-    color: var(--accent-color);
-    
+    color: var(--accent-color);   
 }
 
 .footer-studio {
@@ -44,10 +45,13 @@
 }
 .footer__contacts {
     margin-bottom: 60px;
+    @media screen and (min-width:1200px) {
+        margin-bottom: 0;}
 }
 
 .footer__contact {
     margin-bottom: 9px;
+
 }
 
 .footer__contact:last-child {
